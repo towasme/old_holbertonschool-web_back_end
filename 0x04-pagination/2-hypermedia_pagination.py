@@ -36,7 +36,7 @@ class Server:
         e = range_p[1]
         if e > len(server.dataset()):
             return []
-        return(server.dataset()[s:e])
+        return (server.dataset()[s:e])
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """returns a dictionary containing data set pagination info"""
@@ -51,7 +51,7 @@ class Server:
             "next_page": page + 1 if page + 1 < total_pages else None,
             "prev_page": page - 1 if page - 1 > 0 else None,
             "total_pages": total_pages
-            }
+        }
         return ret
 
 
