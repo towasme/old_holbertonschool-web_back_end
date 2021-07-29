@@ -36,7 +36,7 @@ class Server:
         e = range_p[1]
         if e > len(server.dataset()):
             return []
-        return(server.dataset()[s:e])
+        return (server.dataset()[s:e])
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
